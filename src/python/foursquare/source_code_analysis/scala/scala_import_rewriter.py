@@ -46,6 +46,8 @@ class ScalaImportRewriter(ScalaSourceFileRewriter):
 
   - Does not regroup/reorder imports. scala_import_sorter does that.
 
+  - Does not removed unused imports. scala_unused_import_remover does that.
+
   - We use semi-naive regexps, so this may not do what you expect in very extreme corner cases. For example,
     it will rewrite some malformed, syntactically incorrect import statements, but not others.
     You definitely want to eyeball all changes made by this script before committing them.

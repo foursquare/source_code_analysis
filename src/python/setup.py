@@ -13,7 +13,8 @@ setup(version='0.12',
       scripts = ['scripts/git-fix-scala-imports.sh'],
       entry_points = {
         'console_scripts': [
-          'scala_import_sorter = foursquare.source_code_analysis.scala.scripts.scala_import_sorter:main'
+          'scala_import_sorter = foursquare.source_code_analysis.scala.scripts.scala_import_sorter:main',
+          'scala_unused_import_remover = foursquare.source_code_analysis.scala.scripts.scala_unused_import_remover:main'
         ]
       }
      )
